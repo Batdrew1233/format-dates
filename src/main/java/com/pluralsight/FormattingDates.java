@@ -28,5 +28,12 @@ public class FormattingDates {
         //Print the third formatted date
         System.out.println(formattedDate3);
 
+        //Made fourth date formatter
+        DateTimeFormatter formatter4 = DateTimeFormatter.ofPattern("EEEE, MMM dd, yyyy ss");
+        //Put the formatted date into new string variable
+        String formattedDate4 = todaysDate.format(formatter4);
+        //Print the fourth formatted date
+        System.out.println(formattedDate4);
+
     }
 }
